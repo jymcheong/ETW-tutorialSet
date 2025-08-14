@@ -28,7 +28,7 @@ I will show & explain how to repurpose certain “fileless” offensive techniqu
 ***
 
 ### Near real-time response  
-ETW provides the data to decide when to trigger actions on the endpoint instantly, either directly from events or after light on-device correlation—avoiding the need to send a firehose of data to a backend.
+ETW provides the data to decide when to trigger actions on the endpoint instantly, either directly from events or after light on-device correlation, avoiding the need to send a firehose of data to a backend.
 
 This series will show how to use ETW for near-real-time application and egress control, using high-level C# code, not kernel-level development.  
 
@@ -40,7 +40,7 @@ This series will show how to use ETW for near-real-time application and egress c
 - No driver signing costs  
 - No BSOD risk since we stay out of kernel space  
 
-We’ll also show how to turn any C# console app into a SYSTEM process, and discuss the weaknesses of the common driver-based approach—and how to overcome them with a simpler method.  
+We’ll also show how to turn any C# console app into a SYSTEM process, and discuss the weaknesses of the common driver-based approach and how to overcome them with a simpler method.  
 
 ***
 
@@ -50,7 +50,7 @@ For near-real-time response, audit events suffer from latency. But if your use c
 
 ### Sysmon
 
-Sysmon excels as a monitoring tool when you need visibility beyond basic process creation and termination (like EID 4688 and 4689). It provides deep telemetry, such as detailed network connection events, that are otherwise unavailable through standard audit facilities. This series also includes an example of interacting directly with the Sysmon ETW provider, enabling you to tap into Sysmon's events programmatically—for advanced correlation, custom detection, and near real-time response scenarios.
+Sysmon excels as a monitoring tool when you need visibility beyond basic process creation and termination (like EID 4688 and 4689). It provides deep telemetry, such as detailed network connection events, that are otherwise unavailable through standard audit facilities. This series also includes an example of interacting directly with the Sysmon ETW provider, enabling you to tap into Sysmon's events programmatically for advanced correlation, custom detection, and near real-time response scenarios.
 
 ### Non-Microsoft Options
 
