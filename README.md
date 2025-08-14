@@ -38,7 +38,7 @@ This series will show how to use ETW for near-real-time application and egress c
 - Lower learning curve than driver development  
 - Easier to maintain  
 - No driver signing costs  
-- No BSOD risk since we stay out of kernel space  
+- No BSOD risk (that brought global IT down) since we stay out of kernel space  
 
 We’ll also show how to turn any C# console app into a SYSTEM process, and discuss the weaknesses of the common driver-based approach and how to overcome them with a simpler method.  
 
