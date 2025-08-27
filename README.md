@@ -17,7 +17,7 @@ This is not a step-by-step ETW tutorial, but a sharing of practical but advanced
 Windows audit events are often enough for basic detection and accountability. In such cases, ETW development isn’t worth the overhead.  
 
 ETW agent development makes sense when you need to:  
-- Correlate different event types, e.g., link process creation details with its network egress activity.  
+- Correlate different event types, e.g., link process creation details with its network egress activity directly for near-real-time response.  
 - Handle detection scenarios where audit data is insufficient:  
   - True Parent ProcessID is absent in EID-4688 and even Sysmon.  
   - File access auditing typically needs per-resource setup; even with Global Object Access Auditing, capturing everything for backend processing is impractical.  
