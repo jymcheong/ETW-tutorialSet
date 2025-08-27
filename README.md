@@ -10,7 +10,7 @@ This series is for professionals who already understand Event Tracing for Window
 - System programmers looking to pivot into security  
 - Product managers/architects designing product capabilities  
 
-This is not a step-by-step ETW tutorial, it is a sharing of practical but advanced notes related ETW beyond audit log collection. I am doing this as a means to clock my CISSP CPEs.  
+This is not a step-by-step ETW tutorial, it is a sharing of practical experience & notes related ETW beyond audit log collection. I am doing this as a means to clock my CISSP CPEs.  
 
 
 
