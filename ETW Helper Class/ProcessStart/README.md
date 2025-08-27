@@ -4,7 +4,7 @@
 - If you remove the if line that filters out DLL paths, you will see the amount of DLLs that are loaded per process.
 
 ## What other observations did you make?
-- Look at the volume before/after removing the DLL filter line
+- Look at the event volume (how many lines printed out from the example Console app) before/after removing the DLL filter line
 - ProcessStart handler did it provide full path?
 
 ## What else can you try?
