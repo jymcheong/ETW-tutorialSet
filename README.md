@@ -70,4 +70,4 @@ The next entry in this series will be on **Reusable Helper Class**. It will cove
 * Explanation of the helper class design and usage
 * Testing approaches
 
-Do follow/fork this on Github or connect @ [LinkedIn](https://www.linkedin.com/in/jymcheong/)!
+Feel free to fork or connect @ [LinkedIn](https://www.linkedin.com/in/jymcheong/)!

@@ -1,5 +1,5 @@
 ## Roadmap
-![](img/bigPicture.png)
+![](img/roadmap.png)
 
 ## Overview
 * Setup of development environment
