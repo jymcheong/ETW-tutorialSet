@@ -65,7 +65,7 @@ Sysmon excels as a monitoring tool when you need visibility beyond basic process
 There’s no shortage of open-source ETW projects on GitHub, but one project stands out for its polish and active development: **Fibratus**. [Fibratus](https://github.com/rabbitstack/fibratus) is purpose-built for adversary detection, protection, and threat hunting using ETW. It covers a wide spectrum of system activity, provides a flexible detection rule engine, and supports real-time and forensic workflows. The project is mature, well-maintained, and highly extensible, making it a strong alternative to Sysmon for advanced defenders and developers seeking maximum control over system event instrumentation.
 
 ## What's Next?
-The next entry in this series will be on **Reusable Helper Class**. It will cover:
+The [next entry](ETW%20Helper%20Class/README.md) in this series will be on **Reusable Helper Class**. It will cover:
 * Setup of development environment
 * Explanation of the helper class design and usage
 * Testing approaches
