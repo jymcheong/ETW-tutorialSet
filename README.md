@@ -24,8 +24,8 @@ This series is for professionals who already understand Event Tracing for Window
 Windows audit events are often enough for basic detection and accountability. For those cases, ETW development won't make sense.  
 
 ETW agent development makes sense when you need to:  
-- Correlate different event types (e.g. process + network details) for *near-real-time response within the hosts* .  
-- Handle detection scenarios where audit data is insufficient:  
+- Correlate different event types (e.g. process + network details).  
+- Handle detection use-cases where audit data is insufficient:  
   - True Parent ProcessID is absent in EID-4688 and even Sysmon.  
   - File access auditing typically needs per-resource setup; even with Global Object Access Auditing, capturing everything for backend processing is impractical.  
 - Reduce backend complexity and storage costs by pushing processing to endpoints.
