@@ -2,7 +2,7 @@
 >This is a personal project & DOES NOT in any way represent my current & previous employers.
 
 ## Roadmap
-![](bigPicture.png)
+![](roadmap.png)
 ## What is this series about & who is it for?  
 >This is NOT a step-by-step ETW tutorial, it is a sharing of practical experience & notes related ETW beyond audit log collection. I am doing this as a means to clock my CISSP CPEs.
 
