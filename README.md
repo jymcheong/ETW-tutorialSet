@@ -8,33 +8,31 @@ This series is for professionals who already understand Event Tracing for Window
 - System programmers looking to pivot into security  
 - Product managers/architects designing product capabilities  
 
-This is not a step-by-step ETW tutorial, it is a sharing of practical but advanced use-cases of ETW beyond audit log collection.  
+This is not a step-by-step ETW tutorial, it is a sharing of practical but advanced notes related ETW beyond audit log collection.  
 
 ***
 
 ## When to use ETW?  
 
 ### Beyond audit logging data-sets 
-Windows audit events are often enough for basic detection and accountability. In such cases, ETW development isn’t worth the overhead.  
+Windows audit events are often enough for basic detection and accountability. In such cases, ETW development won't make sense.  
 
 ETW agent development makes sense when you need to:  
-- Correlate different event types, e.g., link process creation details with its network egress activity directly for near-real-time response.  
+- Correlate different event types for *near-real-time response* (e.g. process + network details).  
 - Handle detection scenarios where audit data is insufficient:  
   - True Parent ProcessID is absent in EID-4688 and even Sysmon.  
   - File access auditing typically needs per-resource setup; even with Global Object Access Auditing, capturing everything for backend processing is impractical.  
 - Reduce backend complexity and storage costs by pushing processing to endpoints.
-- Mitigate disarming of commercial EDRs, have a backup plan...
+- Detect & mitigate disarming of commercial EDRs, have a backup plan...
 
-I will show & explain how to repurpose certain “fileless” offensive techniques to simplify agent deployment and updates.  
+I will also share how, to repurpose certain “fileless” offensive techniques to simplify agent deployment and updates.  
 
 ***
 
 ### Near real-time response
-The typical collect-to-analyze centrally workflow often incur a round-trip that is too high latency to be useful for near-real-time response.
+Typical collect-to-analyze centrally workflow will incur a round-trip that is too high latency to be useful for near-real-time response. ETW provides the data to decide when to trigger actions on the endpoint instantly, either directly from events or after correlation within endpoint, avoiding the need to send a firehose of data to a backend.
 
-ETW provides the data to decide when to trigger actions on the endpoint instantly, either directly from events or after correlation within endpoint, avoiding the need to send a firehose of data to a backend.
-
-This series will show how to use ETW for near-real-time application and egress control, using high-level C# code, not kernel-level development.  
+This series will show how to use ETW for near-real-time application and egress control (as shown in the earlier roadmap), using high-level C# code, without kernel-level development.  
 
 ***
 
@@ -44,7 +42,7 @@ This series will show how to use ETW for near-real-time application and egress c
 - No driver signing costs  
 - No [BSOD risks](https://cloudsecurityalliance.org/blog/2025/07/03/what-we-can-learn-from-the-2024-crowdstrike-outage) (that brought global IT down) since we stay out of kernel space  
 
-We’ll also show how to turn any C# console app into a SYSTEM process, and discuss the weaknesses of the common driver-based approach and how to overcome them with a simpler method.  
+I will cover turning any C# console app into a SYSTEM process, and discuss the weaknesses of the common driver-based approach and how to overcome them with a simpler method.  
 
 ***
 
