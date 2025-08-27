@@ -1,0 +1,16 @@
+## What is it doing?
+- Process start by default are NOT shown in Windows Event Viewer.
+- This simple example shows PID (Process Identifier), file name (no path), and command line arguments & finally full path within ImageLoad event handler.
+- If you remove the if line that filters out DLL paths, you will see the amount of DLLs that are loaded per process.
+
+## What other observations did you make?
+- Look at the volume before/after removing the DLL filter line
+- ProcessStart handler did it provide full path?
+
+## What else can you try?
+- Turn on 4688 audit event & look at Windows Event Viewer
+- You can also try Googling or Vibe Coding to see if you turn on security audit for DLL loads; you won't find such audit event because there's none.
+- This is a building block example towards Application Control with ETW in a later part of the series.
+- Look at the constructor for the helper class & compare with KrabsETW...
+
+
