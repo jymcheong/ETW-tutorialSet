@@ -21,10 +21,10 @@ This series is for professionals who already understand Event Tracing for Window
 ## When to use ETW?  
 
 ### Beyond audit logging data-sets 
-Windows audit events are often enough for basic detection and accountability. In such cases, ETW development won't make sense.  
+Windows audit events are often enough for basic detection and accountability. For those cases, ETW development won't make sense.  
 
 ETW agent development makes sense when you need to:  
-- Correlate different event types for *near-real-time response* (e.g. process + network details).  
+- Correlate different event types (e.g. process + network details) for *near-real-time response within the hosts* .  
 - Handle detection scenarios where audit data is insufficient:  
   - True Parent ProcessID is absent in EID-4688 and even Sysmon.  
   - File access auditing typically needs per-resource setup; even with Global Object Access Auditing, capturing everything for backend processing is impractical.  
@@ -48,7 +48,7 @@ This series will show how to use ETW for near-real-time application and egress c
 - No driver signing costs  
 - No [BSOD risks](https://cloudsecurityalliance.org/blog/2025/07/03/what-we-can-learn-from-the-2024-crowdstrike-outage) (that brought global IT down) since we stay out of kernel space  
 
-I will cover turning any C# console app into a SYSTEM process, and discuss the weaknesses of the common driver-based approach and how to overcome them with a simpler method.  
+I will cover turning any C# console app into a SYSTEM process, and discuss the weaknesses of the common driver-based approach and how to overcome them with a simpler approach.  
 
 ***
 
