@@ -52,7 +52,7 @@ I will cover turning any C# console app into a SYSTEM process, and discuss the w
 
 ## Alternatives  
 ### Windows Audit Events  
-For near-real-time response, audit events suffer from latency. But if your use case tolerates delays, you can achieve results with just a few lines of C#, also covered in this series.  
+For near-real-time response, audit events may be too slow. But if your use case tolerates delays, you can tap into Windows audit events with just a few lines of C#, also covered in this series.  
 
 ### Sysmon
 
