@@ -29,7 +29,7 @@ ETW agent development makes sense when you need to:
 - Reduce backend complexity and storage costs by pushing processing to endpoints.
 - Detect & mitigate disarming of commercial EDRs, have a backup plan...
 
-I will also share how, to repurpose certain “fileless” offensive techniques to simplify agent deployment and updates.  
+I will also share how to repurpose certain “fileless” offensive technique to simplify agent deployment and updates.  
 
 ***
 
