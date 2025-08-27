@@ -12,7 +12,7 @@ You will need:
 * Visual Studio Community 2022
 * Win 10 or 11 with local admin rights
 
-I won't drill into the step-by-step, use the easiest way for you to clone this repository and go into respective folders to look for solution files (.sln) to launch with Visual Studio.
+I won't elaborate on how to set up the development environment, use the easiest way for you to clone this repository, then explore respective folders to look for solution files (.sln) to launch with Visual Studio.
 
 ## Design
 ### Why a Helper Class?
@@ -31,9 +31,16 @@ I won't drill into the step-by-step, use the easiest way for you to clone this r
 >I will provide a short example in one of the code folders that demonstrates file-less ETW agent loading. This cannot be done with KrabsETW since we can't bundle native DLLs with managed agent(s). So that's one of my considerations when picking which ETW library to use.
 
 ### How to figure out which fields from which provider since there are SO MANY!!!?
->This in my opinion is the most challenging part of ETW development
+>This in my opinion is the most challenging part of ETW development.
 
-This helper class and the examples organized in an object-oriented format will provide some guidance. The comments within the code will explain things further than writing everything in a README.
+This helper class and the examples organized in an object-oriented format will provide some guidance. The comments within the code will explain things further, which I find more effective than writing everything in a single huge README.
 
 ## Testing
-* Visual Studio needs to Run-as Local Administrator for step debugging
+Note the following:
+* Visual Studio needs to Run-as Local Administrator to run ETW codes for debugging/testing
+* Look at memory & CPU profiles in Task Manager, Perfmon or within Visual Studio debugger
+* Avoid event handler routine that has blocking calls (e.g. write to disks like logging, network calls, etc...)
+* Push or deploy to a remote machine to test for stability & reliability.
+
+## What's Next
+I will update & add more code examples along the way, now we start off with a simple program start monitoring example.
