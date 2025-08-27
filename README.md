@@ -50,7 +50,7 @@ For near-real-time response, audit events suffer from latency. But if your use c
 
 ### Sysmon
 
-Sysmon excels as a monitoring tool when you need visibility beyond basic process creation and termination (like EID 4688 and 4689). It provides deep telemetry, such as detailed network connection events, that are otherwise unavailable through standard audit facilities. This series also includes an example of interacting directly with the Sysmon ETW provider, enabling you to tap into Sysmon's events programmatically for advanced correlation, custom detection, and near real-time response scenarios.
+Sysmon excels as a monitoring tool when you need visibility beyond basic process creation and termination (like EID 4688 and 4689). It provides deep telemetry, such as detailed network connection events, that are otherwise unavailable or tedious to correlate through standard audit facilities. This series also includes an example of interacting directly with the Sysmon ETW provider, enabling you to tap into Sysmon's events programmatically for advanced correlation, custom detection, and near real-time response scenarios.
 
 ### Non-Microsoft Options
 
