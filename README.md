@@ -7,7 +7,7 @@ This series is for professionals who already understand Event Tracing for Window
 - System programmers looking to pivot into security  
 - Product managers/architects designing product capabilities  
 
-This is not a step-by-step ETW tutorial, but a deep dive into practical, advanced uses of ETW beyond audit log collection.  
+This is not a step-by-step ETW tutorial, but a sharing of practical, advanced uses of ETW beyond audit log collection.  
 
 ***
 
