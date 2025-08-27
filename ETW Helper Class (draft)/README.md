@@ -25,7 +25,7 @@ I won't drill into the step-by-step, use the easiest way for you to clone this r
 
 ### Why [`Microsoft.Diagnostics.Tracing.TraceEvent`](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent/) & not [KrabsETW](https://github.com/microsoft/krabsetw) or C++/Golang/Rust...?
 - Depends what are your priorities. *E.g. pressure to show something quickly?*
-- Do you really need very low-level control with things like KrabsETW which has native C++ codes + DLL to bundle with your program?
+- Do you really need low-level control with things like KrabsETW which has native C++ codes & DLL to bundle with your program?
 - Or do you just want to get things done with C# or even VB.NET that you are familar & proficient with?
  
 >While working on OpenEDR, I came to the realization that I should steer clear of Driver and low-level code development. It wasn't that I lacked the knowledge or skills (honestly, I'm quite out of touch), but it was becoming increasingly challenging to find a younger generation of developers who are interested in systems programming.
