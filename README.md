@@ -4,13 +4,15 @@
 ## Roadmap
 ![](bigPicture.png)
 ## What is this series about & who is it for?  
+>This is NOT a step-by-step ETW tutorial, it is a sharing of practical experience & notes related ETW beyond audit log collection. I am doing this as a means to clock my CISSP CPEs.
+
 This series is for professionals who already understand Event Tracing for Windows (ETW) and work in technical roles such as:  
 - Security product developers/engineers  
 - Threat hunters and malware analysts  
 - System programmers looking to pivot into security  
 - Product managers/architects designing product capabilities  
 
-This is not a step-by-step ETW tutorial, it is a sharing of practical experience & notes related ETW beyond audit log collection. I am doing this as a means to clock my CISSP CPEs.  
+  
 
 
 
@@ -60,7 +62,7 @@ Sysmon excels as a monitoring tool when you need visibility beyond basic process
 
 ### Non-Microsoft Options
 
-There’s no shortage of open-source ETW projects on GitHub, but one project stands out for its polish and active development: **Fibratus**. [Fibratus](https://github.com/rabbitstack/fibratus) is purpose-built for adversary detection, protection, and threat hunting using ETW. It covers a wide spectrum of system activity, provides a flexible detection rule engine, and supports real-time and forensic workflows. The project is mature, well-maintained, and highly extensible—making it a strong alternative or complement to Sysmon for advanced defenders and developers seeking maximum control over system event instrumentation.
+There’s no shortage of open-source ETW projects on GitHub, but one project stands out for its polish and active development: **Fibratus**. [Fibratus](https://github.com/rabbitstack/fibratus) is purpose-built for adversary detection, protection, and threat hunting using ETW. It covers a wide spectrum of system activity, provides a flexible detection rule engine, and supports real-time and forensic workflows. The project is mature, well-maintained, and highly extensible, making it a strong alternative to Sysmon for advanced defenders and developers seeking maximum control over system event instrumentation.
 
 ## What's Next?
 The next entry in this series will be on **Reusable Helper Class**. It will cover:
