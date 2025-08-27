@@ -21,7 +21,8 @@ ETW agent development makes sense when you need to:
 - Handle detection scenarios where audit data is insufficient:  
   - True Parent ProcessID is absent in EID-4688 and even Sysmon.  
   - File access auditing typically needs per-resource setup; even with Global Object Access Auditing, capturing everything for backend processing is impractical.  
-- Reduce backend complexity and storage costs by pushing processing to endpoints. 
+- Reduce backend complexity and storage costs by pushing processing to endpoints.
+- Mitigate disarming of commercial EDRs, have a backup plan...
 
 I will show & explain how to repurpose certain “fileless” offensive techniques to simplify agent deployment and updates.  
 
