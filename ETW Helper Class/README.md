@@ -31,7 +31,7 @@ I won't elaborate on how to set up the development environment, use the easiest 
 
 ### Why [`Microsoft.Diagnostics.Tracing.TraceEvent`](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent/) & not [KrabsETW](https://github.com/microsoft/krabsetw) or C++/Golang/Rust...?
 - Depends what are your priorities. *E.g. pressure to show something quickly?*
-- Do you really need low-level control with things like KrabsETW which has native C++ codes & DLL to bundle with your program?
+- Do you really need low-level control with tools/libraries like KrabsETW which has native C++ codes & DLL to bundle with your program?
 - Are you going to maintain it or you need to transfer to another group (which is easier for you or them)?
 - Or do you just want to get things done with C# or even VB.NET that you are familar & proficient with?
  
