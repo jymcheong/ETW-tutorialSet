@@ -6,15 +6,15 @@
 ## Observations?
 - Look at the event volume (how many lines printed out from the example Console app) before/after removing the DLL filter line
 - Did ProcessStart handler provide full path? 
->No, it did not. Need another handler for that. What then would be the implications if let's say you need to implement a tracking logic to wait for let's say egress activities?
+- [Which trace provider](https://github.com/microsoft/krabsetw/blob/master/docs/UsingMessageAnalyzerToFindETWSources.md) for what?
 
 ## What else can you try?
 ![](eventviewer.png)
 
 - [Turn on 4688 audit event](https://www.perplexity.ai/search/i-need-powershell-commands-to-OZzHDW9TQmSRJGO_YbJ8CQ) & look at Windows Event Viewer
 - You can also try Googling or AI tools to see if you turn on security audit for DLL loads; you won't find such audit event because there's none.
-- Look at the constructor for the helper class & compare with KrabsETW...
+- Look at the constructor for the helper class
 - This is a building block example towards Application Control with ETW in a later part of the series.
 
-
+https://github.com/microsoft/krabsetw/blob/master/docs/UsingMessageAnalyzerToFindETWSources.md is an excellent example of how to use Microsoft Message Analyzer to Find New ETW Sources!
 
