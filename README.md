@@ -6,13 +6,11 @@
 ## What is this series about & who is it for?  
 >This is NOT a step-by-step ETW tutorial, it is a sharing of practical experience & notes related to ETW beyond audit log collection.
 
-This series is for professionals who already understand Event Tracing for Windows (ETW) and work in technical roles such as:  
-- Security product developers/engineers  
-- Threat hunters and malware analysts  
-- System programmers looking to pivot into security  
+Target audience:  
+- System programmers looking to pivot into security
+- Threat hunters and malware analysts 
+- Detection engineering or Security product developers/engineers  
 - Product managers/architects designing product capabilities  
-
-  
 
 
 
