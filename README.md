@@ -34,7 +34,7 @@ I will also share how to repurpose certain “fileless” offensive technique to
 ***
 
 ### Near real-time response
-Typical collect-to-analyze centrally workflow will incur a round-trip that is too high latency to be useful for near-real-time response. ETW provides the data to decide when to trigger actions on the endpoint instantly, either directly from events or after correlation within endpoint, avoiding the need to send a firehose of data to a backend.
+ETW provides the data to decide when to trigger actions on the endpoint instantly, either directly from events or after correlation within endpoint, avoiding the need to send a firehose of data to a backend.
 
 This series will show how to use ETW for near-real-time application and egress control (as shown in the earlier roadmap), using high-level C# code, without kernel-level development.  
 
