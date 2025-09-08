@@ -8,8 +8,8 @@
 
 Target audience:  
 - System programmers looking to pivot into security
-- Threat hunters and malware analysts 
-- Detection engineering or Security product developers/engineers  
+- Detection use-case engineers or Security product developers/engineers
+- Threat hunters and malware analysts
 - Product managers/architects designing product capabilities  
 
 
