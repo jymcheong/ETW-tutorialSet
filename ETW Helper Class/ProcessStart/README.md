@@ -3,7 +3,7 @@
 - This simple example shows PID (Process Identifier), file name (no path), and command line arguments & finally full path within ImageLoad event handler.
 - If you remove the if line that filters out DLL paths, you will see the amount of DLLs that are loaded per process.
 
-## Observations?
+## What to look out for?
 - Look at the event volume (how many lines printed out from the example Console app) before/after removing the DLL filter line
 - Did ProcessStart handler provide full path? 
 - [Which trace provider](https://github.com/microsoft/krabsetw/blob/master/docs/UsingMessageAnalyzerToFindETWSources.md) for what?
