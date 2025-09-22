@@ -24,7 +24,7 @@ Attackers abuse parent process spoofing to make malware appear as if it originat
 |-------------------------|--------------------------------------|--------------------------------------------|
 | Mechanism               | Set parent PID via system API        | Set parent PID via same APIs               |
 | Requires privilege?     | Only for SYSTEM-level elevation      | Yes for privilege escalation, not always   |
-| Security impact         | Proper privilege inheritance         | Confuses monitoring, enables escalation    |
+| Security impact         | Proper privilege inheritance         | Confuses monitoring, enables escalation (e.g. UAC bypass)    |
 | Classic example         | Elevated process appears from shell  | PowerShell spawned by explorer.exe (user shell)        |
 | Abuse detection         | Check for unexpected PPIDs           | Monitor for anomalous parent-child pairs   |
 
@@ -33,7 +33,7 @@ This technique leverages inherent Windows features for both legitimate user expe
 ## How to use ETW to report parent process spoofing
 - Standard audit events like 4688 or even Sysmon ProcessCreate DO NOT report parent process spoofing.
 - When it comes to evasion, parent spoofing is also used with commandline spoofing (will revisit under CrossProcess example).
-- Detecting parent spoofing also helps establish UAC bypasses, which is not mentioned in the previous table.
+- Detecting parent spoofing also helps establish UAC bypasses, which is mentioned in the previous table.
 
 > The sample codes simply reports parent spoofing, but it doesn't have the logic to determine whether it is good or bad. It is to illustrate how we extend from the ProcessStart ETW example to monitor parent process spoofing. 
 
