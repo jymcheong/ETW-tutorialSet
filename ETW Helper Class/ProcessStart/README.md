@@ -9,7 +9,7 @@
 - [Which trace provider](https://github.com/microsoft/krabsetw/blob/master/docs/UsingMessageAnalyzerToFindETWSources.md) for what?
 
 ## What else can you try?
-![](eventviewer.png)
+![](eventViewer.png)
 
 - [Turn on 4688 audit event](https://www.perplexity.ai/search/i-need-powershell-commands-to-OZzHDW9TQmSRJGO_YbJ8CQ) & look at Windows Event Viewer
 - You can also try Google / AI tools to see if you turn on security audit for DLL loads; you won't find such audit event because there's none.
