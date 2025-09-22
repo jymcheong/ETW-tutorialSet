@@ -18,4 +18,5 @@
 
 https://github.com/microsoft/krabsetw/blob/master/docs/UsingMessageAnalyzerToFindETWSources.md is an excellent resource to learn how to use Microsoft Message Analyzer to find new ETW Sources!
 
->Next, you may want to look at the topic of [Parent Spoofing](../ParentSpoof/README.md)!
+# Next
+You may want to look at the topic of [Parent Spoofing](../ParentSpoof/README.md)!
