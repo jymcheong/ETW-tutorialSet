@@ -35,7 +35,7 @@ This technique leverages inherent Windows features for both legitimate user expe
 - When it comes to evasion, parent spoofing is also used with commandline spoofing (will revisit under CrossProcess example).
 - Detecting parent spoofing also helps establish UAC bypasses, which is mentioned in the previous table.
 
-> The sample codes simply reports parent spoofing, but it doesn't have the logic to determine whether it is good or bad. It is to illustrate how we extend from the ProcessStart ETW example to monitor parent process spoofing. 
+> The sample codes simply reports parent spoofing, but it doesn't have the logic to determine whether it is good or bad. It is to illustrate how we extend from the ProcessStart ETW example to monitor parent process spoofing, highlighting the need for at least 2 ETW providers for a complete picture of parent spoofing. 
 
 ### Main differences from ProcessStart example
 - Removed ImageLoad handler since we are not concern with DLLs.
