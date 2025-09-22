@@ -42,7 +42,7 @@ Here are all main permutations and methods to delete Volume Shadow Copies (VSS s
 
 >Notice there are only two approaches that cannot be detected via commandline string. 
 
-For those that can be detected via commandline string, notice `shadow` & `delete` are the keywords (lowercase the string for substring matches) that present for all of them. 
+For those that can be detected via commandline string, notice `shadow` & `delete` are the keywords (lowercase the string for substring matches) that present for all of them. Be mindful that characters like `^` (for cmd.exe) & Powershell concatenation operators like `+` can be used to obfuscate commandline string against simple substring matching. Edit distance functions will be useful here. 
 
 ### What's defenders' next best move?
 >Since the attack does a delete, your ETW agent just simply run a backup again. The malware logic most likely will still thinks it has successfully wiped the shadow copies.
