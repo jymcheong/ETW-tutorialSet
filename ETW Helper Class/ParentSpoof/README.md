@@ -1,7 +1,7 @@
 ## Overview (What > Why > How)
 This example extends from [ProcessStart example](../ProcessStart/README.md) to monitor parent process spoofing.
 - We start off with **what** is parent spoofing & explain **why** it matters.
-- After which, see **how** use ETW to monitor parent process spoofing.
+- After which, see **how** to use ETW to monitor parent process spoofing.
 
 ## What is it & Why it matters
 Windows process parent spoofing is a technique where the parent process ID (PPID) of a newly created process is deliberately set to a different process than the actual originator, disguising where the process came from and potentially inheriting privileges from the spoofed parent. This can be abused for EDR evasion and privilege escalation, but Windows also implements parent spoofing legitimately when elevating privileges via UAC dialogs.[1][2][3][4][5][6]
