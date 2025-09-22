@@ -9,9 +9,7 @@
 Target audience:  
 - System programmers looking to pivot into security
 - Detection use-case engineers or Security product developers/engineers
-- Threat hunters and malware analysts
-- Product managers/architects designing product capabilities  
-
+- Threat hunters and malware analysts who want to explore near-real-time detection
 
 
 ***
@@ -24,7 +22,7 @@ Windows audit events are often enough for basic detection and accountability. Fo
 ETW agent development makes sense when you need to:  
 - Correlate different event types (e.g. process + network details).  
 - Handle detection use-cases where audit data is insufficient:  
-  - True Parent ProcessID is absent in EID-4688 and even Sysmon.  
+  - [True Parent ProcessID](ETW%20Helper%20Class/ParentSpoof/README.md) is absent in EID-4688 and even Sysmon.  
   - File access auditing typically needs per-resource setup; even with Global Object Access Auditing, capturing everything for backend processing is impractical.  
 - Reduce backend complexity and storage costs by pushing processing to endpoints.
 - Detect & mitigate disarming of commercial EDRs, have a backup plan...
