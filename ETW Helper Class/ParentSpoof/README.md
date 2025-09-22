@@ -60,6 +60,7 @@ Once you start a powershell session similar to what was shown in the gif, you sh
 - The latter doesn't have CommandLine but has true PPID
 
 Drill into PayloadNames & notice no CommandLine...
+
 ![](noCommandLine.png)
 
 >To report a complete picture of parent spoofing, you will need two ETW providers!
