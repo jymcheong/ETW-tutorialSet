@@ -37,8 +37,6 @@ This technique leverages inherent Windows features for both legitimate user expe
 
 > The sample codes simply reports parent spoofing, but it doesn't have the logic to determine whether it is good or bad. It is to illustrate how we extend from the ProcessStart ETW example to monitor parent process spoofing. 
 
-![](etwWatcherClass.png)
-
 ### Main differences from ProcessStart example
 - Removed ImageLoad handler since we are not concern with DLLs.
 - Added ParentSpoofHandler to monitor parent process spoofing.
@@ -52,6 +50,18 @@ Remember to start Visual Studio as Local Administrator to run ETW codes for debu
 Once you start a powershell session similar to what was shown in the gif, you should hit that breakpoint.
 
 >You should also notice that the true PPID for consent.exe is the same as powershell or any process that you UAC elevate to run.
+
+![](etwWatcherClass.png)
+
+### Two ETW Providers
+- There are two different ETW providers: MSNT_SystemTrace vs Microsoft-Windows-Kernel-Process
+- The former has CommandLine attribute, similar to what you have seen in ProcessStart example
+- The latter doesn't have CommandLine but has true PPID
+
+Drill into PayloadNames & notice no CommandLine
+![](noCommandLine.png)
+
+>To report a complete picture, you end up needing two ETW providers!
 
 ## References
 
