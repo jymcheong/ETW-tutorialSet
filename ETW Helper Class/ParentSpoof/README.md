@@ -51,17 +51,18 @@ Once you start a powershell session similar to what was shown in the gif, you sh
 
 >You should also notice that the true PPID for consent.exe is the same as powershell or any process that you UAC elevate to run.
 
+### Two ETW Providers
+
 ![](etwWatcherClass.png)
 
-### Two ETW Providers
 - There are two different ETW providers: MSNT_SystemTrace vs Microsoft-Windows-Kernel-Process
 - The former has CommandLine attribute, similar to what you have seen in ProcessStart example
 - The latter doesn't have CommandLine but has true PPID
 
-Drill into PayloadNames & notice no CommandLine
+Drill into PayloadNames & notice no CommandLine...
 ![](noCommandLine.png)
 
->To report a complete picture, you end up needing two ETW providers!
+>To report a complete picture of parent spoofing, you will need two ETW providers!
 
 ## References
 
