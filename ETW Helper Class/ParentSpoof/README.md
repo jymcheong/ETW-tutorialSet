@@ -51,7 +51,7 @@ Once you start a powershell session similar to what was shown in the gif, you sh
 
 >You should also notice that the true PPID for consent.exe is the same as powershell or any process that you UAC elevate to run.
 
-### Two ETW Providers
+### Need Two ETW Providers
 
 ![](etwWatcherClass.png)
 
