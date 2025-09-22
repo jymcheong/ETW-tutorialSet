@@ -14,7 +14,7 @@
 - [Turn on 4688 audit event](https://www.perplexity.ai/search/i-need-powershell-commands-to-OZzHDW9TQmSRJGO_YbJ8CQ) & look at Windows Event Viewer
 - You can also try Google / AI tools to see if you turn on security audit for DLL loads; you won't find such audit event because there's none.
 - Look at the constructor for the helper class
-- This is a building block example towards Application Control with ETW in a later part of the series.
+- That class is a building block example towards Application Control with ETW in a later part of the series.
 
 https://github.com/microsoft/krabsetw/blob/master/docs/UsingMessageAnalyzerToFindETWSources.md is an excellent resource to learn how to use Microsoft Message Analyzer to find new ETW Sources!
 
