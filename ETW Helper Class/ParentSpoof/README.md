@@ -3,11 +3,8 @@ This example extends from [ProcessStart example](../ProcessStart/README.md) to m
 - We start off with **what** is parent spoofing & explain **why** it matters.
 - After which, see **how** to use ETW to monitor parent process spoofing.
 
-## Why it matters
-Windows process parent spoofing is a technique where the parent process ID (PPID) of a newly created process is deliberately set to a different process than the actual originator, disguising where the process came from and potentially inheriting privileges from the spoofed parent. This can be abused for EDR evasion and privilege escalation, but Windows also implements parent spoofing legitimately when elevating privileges via UAC dialogs.[1][2][3][4][5][6]
-
-### What Is Parent Process Spoofing
-Parent process spoofing involves manipulating the Windows process creation attributes so the new process appears to be spawned by a benign or privileged parent. Attackers typically use the `CreateProcess` API along with appropriate flags (or `UpdateProcThreadAttribute`) to set an arbitrary parent PID when launching malware, making detection more difficult since EDRs often flag malicious parent-child process relationships.[2][7][5][8][1]
+## What is it & Why it matters
+Parent process spoofing involves manipulating the Windows process creation attributes so the new process appears to be spawned by a benign or privileged parent. Attackers typically use the `CreateProcess` API along with appropriate flags (or `UpdateProcThreadAttribute`) to set an arbitrary parent PID when launching malware, making detection more difficult since EDRs often flag malicious parent-child process relationships [2][7][5][8][1]. Parent Spoofing can be abused for EDR evasion and privilege escalation, but Windows also implements parent spoofing legitimately when elevating privileges via UAC dialogs.[1][2][3][4][5][6]
 
 ### Privilege Escalation Requirements
 Parent process spoofing does not always require privilege escalation, but setting a SYSTEM-level process as the parent for a new process generally requires administrator or SYSTEM permission. Simple spoofing to confuse monitoring (e.g., making PowerShell look spawned by explorer.exe) does not need elevated privileges, but actual escalation hinges on ability to access the target parent's security token and permissions.[4][5][6]
