@@ -9,7 +9,7 @@ W.r.t to Tactics, Techniques & Procedures, the blue arrows below requires some f
 
 Initial Code-Execution may:
 1. report to C2 (Command & Control) server so that attackers know they got into target
-2. download backdoors to install into the system
+2. download more malware or backdoors to install into the system
 
 As part of reconnaisance, attackers may scan the internal network for next or more targets...
 
@@ -26,7 +26,7 @@ Going through the reports @ https://thedfirreport.com & the [likes](https://www.
 ## Why these two?
 - We need to narrow down any offending process(es) & respond (e.g. kill it).
 - Sometimes we can't outright block/delete certain programs like `cmd.exe` or `powershell.exe`, we will need to block the bad destinations at the host &/or network level with firewall rules.
-- W.r.t to the earlier diagram, a backdoor process controlled via the Internet, that is scanning/accessing Intranet (e.g. org chart webpage) would **cover both external & internal destinations**, _how often does that occur in your environment & which program/process are involved?_
+- As shown in the earlier diagram, a backdoor process controlled via the Internet, may start scanning/accessing Intranet (e.g. org chart webpage),  **accessing both external & internal destinations simultaneously**, _how often does that occur in your environment & which program/process are involved?_
 
 ## How to track egress?
 There's really no need for ETW when the objective is simply just recording for compliance or forensics.
