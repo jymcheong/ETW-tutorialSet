@@ -6,7 +6,8 @@ Egress refers to the activities that happen when data leaves our network, whethe
 ## What typically happens after Code-Execution?
 W.r.t to Tactics, Techniques & Procedures, the blue arrows below requires some form of network access:
 ![](../img/ttpEgress.png)￼
-After payload is delivered to the host, initial Code-Execution may:
+
+Initial Code-Execution may:
 1. report to C2 (Command & Control) server so that attackers know they got into target
 2. download backdoors to install into the system
 3. scan the internal network for next or more targets
