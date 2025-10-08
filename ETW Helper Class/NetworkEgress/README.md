@@ -24,7 +24,7 @@ Going through the reports @ https://thedfirreport.com & the [likes](https://www.
 2. What/where is the destination?
 
 ## Why these two?
-- We need to narrow down any offending process(es) & do something (e.g. kill it).
+- We need to narrow down any offending process(es) & respond (e.g. kill it).
 - Sometimes we can't outright block/delete certain programs like cmd.exe or powershell.exe, then we may block the bad destinations at the network level with firewall rules.
 - W.r.t to the earlier diagram, a backdoor process controlled via the Internet, that is scanning Intranet would **cover both external & internal destinations**, _how often does that occur in your environment & which program/process are involved?_
 
@@ -41,5 +41,5 @@ Windows [audit event ID 5156 is your friend](https://www.perplexity.ai/search/ho
 - Want custom profiling of process-network events.
 
 ## What does the ETW examples cover?
-- The simpler version introduces how to configure the ETW helper class to receive network events.
+- The simpler version (within this folder) introduces how to configure the ETW helper class to receive network events.
 - The more complex version introduces how to use the ETW helper class to filter network events.
