@@ -10,7 +10,8 @@ W.r.t to Tactics, Techniques & Procedures, the blue arrows below requires some f
 Initial Code-Execution may:
 1. report to C2 (Command & Control) server so that attackers know they got into target
 2. download backdoors to install into the system
-3. scan the internal network for next or more targets
+
+As part of reconnaisance, attackers may scan the internal network for next or more targets...
 
 Going through the reports @ https://thedfirreport.com & the [likes](https://www.perplexity.ai/search/other-sites-like-https-thedfir-H0hUsCD4SdmEru6yvjomAg#0), you will notice that almost all incidents involving some sort of malware, will almost involve at least one of those boxes above, if not all. 
 
@@ -32,11 +33,12 @@ There's really no need for ETW when the objective is simply just recording for c
 
 Windows [audit event ID 5156 is your friend](https://www.perplexity.ai/search/how-to-turn-on-windows-audit-5-P.lrwnH2QHKOw6LUdOSD8g#0). 
 
->The main problem is huge event volume PER endpoint, multiply that by a population of Windows hosts & any storage sales-rep will be very pleased... which is why MSSP handles all that for you at a subscription fee.
+>The main problem challenge is potentially huge event volume PER endpoint, multiply that by a population of Windows hosts in your environment.
 
 ## When will ETW be useful?
 - Don't want to solely depend on COTS products because disarming them is becoming a norm.
-- Want some automated response that COTS can't do. 
+- Want some automated response that COTS can't do.
+- Want custom profiling of process-network events.
 
 ## What does the ETW examples cover?
 - The simpler version introduces how to configure the ETW helper class to receive network events.
