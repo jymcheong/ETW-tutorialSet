@@ -30,14 +30,14 @@ Going through reports from https://thedfirreport.com & the [likes](https://www.p
   - _how often does that occur in your environment_
   - _which programs/processes are involved?_
 
->You can think of uch processes with both Internet & Intranet network activities as **pivot processes**.
+>You can think of such processes with both Internet & Intranet network activities as **pivot processes**.
 
 ## How to track egress?
 There's really no need for ETW when the objective is simply just recording for compliance or forensics.
 
 Windows [audit event ID 5156 is your friend](https://www.perplexity.ai/search/how-to-turn-on-windows-audit-5-P.lrwnH2QHKOw6LUdOSD8g#0). 
 
->The common thing to do with after gathering process destinations, is to compare with a ["bad" list](https://www.perplexity.ai/search/which-is-the-most-active-and-w-9_fxwvxMQKm.KfwqU7HHZA#0).
+>The common thing to do after gathering process destinations, is to match against ["bad" lists](https://www.perplexity.ai/search/which-is-the-most-active-and-w-9_fxwvxMQKm.KfwqU7HHZA#0).
 
 ## When will ETW be useful?
 - Want some automated response that COTS can't do.
