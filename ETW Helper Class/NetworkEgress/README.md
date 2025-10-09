@@ -24,16 +24,20 @@ Going through the reports @ https://thedfirreport.com & the [likes](https://www.
 2. What/where is the destination?
 
 ## Why these two?
-- We need to narrow down any offending process(es) & respond (e.g. kill it).
-- Sometimes we can't outright block/delete certain programs like `cmd.exe` or `powershell.exe`, we will need to block the bad destinations at the host &/or network level with firewall rules.
-- As shown in the earlier diagram, a backdoor process controlled via the Internet, may start scanning/accessing Intranet (e.g. org chart webpage),  **accessing both external & internal destinations simultaneously**, _how often does that occur in your environment & which program/process are involved?_
+- To narrow down any offending process(es) & respond (e.g. kill/block it).
+- Block the bad destinations at the host &/or network level with firewall rules when we can't block at file level.
+- A backdoor process controlled via the Internet may start scanning/accessing Intranet (e.g. org chart webpage),  **accessing both external & internal destinations simultaneously**: 
+  - _how often does that occur in your environment_
+  - _which programs/processes are involved?_
+
+>You can think of uch processes with both Internet & Intranet network activities as **pivot processes**.
 
 ## How to track egress?
 There's really no need for ETW when the objective is simply just recording for compliance or forensics.
 
 Windows [audit event ID 5156 is your friend](https://www.perplexity.ai/search/how-to-turn-on-windows-audit-5-P.lrwnH2QHKOw6LUdOSD8g#0). 
 
->The main problem challenge is potentially huge event volume PER endpoint, multiply that by a population of Windows hosts in your environment.
+>The common thing to do with after gathering process destinations, is to compare with a ["bad" list](https://www.perplexity.ai/search/which-is-the-most-active-and-w-9_fxwvxMQKm.KfwqU7HHZA#0).
 
 ## When will ETW be useful?
 - Don't want to solely depend on COTS products because disarming them is becoming a norm.
@@ -41,5 +45,41 @@ Windows [audit event ID 5156 is your friend](https://www.perplexity.ai/search/ho
 - Want custom profiling of process-network events.
 
 ## What does the ETW examples cover?
-- The simpler version (within this folder) introduces how to configure the ETW helper class to receive network events.
-- The more complex version introduces how to use the ETW helper class to filter network events.
+The simpler version within this folder introduces how to configure the ETW helper class to receive network events. 
+
+In case you missed the comments within the example, the following powershell command will be useful for any ETW provider (in this case `Microsoft-Windows-Kernel-Network`):
+```powershell
+Get-WinEvent -ListProvider Microsoft-Windows-Kernel-Network).Events | Select Id, Description
+
+Id Description
+-- -----------
+10 TCPv4: %2 bytes transmitted from %4:%6 to %3:%5.
+11 TCPv4: %2 bytes received from %4:%6 to %3:%5.
+12 TCPv4: Connection attempted between %4:%6 and %3:%5.
+13 TCPv4: Connection closed between %4:%6 and %3:%5.
+14 TCPv4: %2 bytes retransmitted from %4:%6 to %3:%5.
+15 TCPv4: Connection established between %4:%6 and %3:%5.
+16 TCPv4: Reconnect attempt between %4:%6 and %3:%5.
+17 TCPv4: Connection attempt failed with error code %2.
+18 TCPv4: %2 bytes copied in protocol on behalf of user for connection between %4:%6 and %3:%5.
+26 TCPv6: %2 bytes transmitted from %4:%6 to %3:%5.
+27 TCPv6: %2 bytes received from %4:%6 to %3:%5.
+28 TCPv6: Connection attempted between %4:%6 and %3:%5.
+29 TCPv6: Connection closed between %4:%6 and %3:%5.
+30 TCPv6: %2 bytes retransmitted from %4:%6 to %3:%5.
+31 TCPv6: Connection established between %4:%6 and %3:%5.
+32 TCPv6: Reconnect attempt between %4:%6 and %3:%5.
+34 TCPv6: %2 bytes copied in protocol on behalf of user for connection between %4:%6 and %3:%5.
+42 UDPv4: %2 bytes transmitted from %4:%6 to %3:%5.
+43 UDPv4: %2 bytes received from %4:%6 to %3:%5.
+49 UDPv4: Connection attempt failed with error code %2.
+58 UDPv6: %2 bytes transmitted from %4:%6 to %3:%5.
+59 UDPv6: %2 bytes received from %4:%6 to %3:%5.
+```            
+## What to do further to learn more?
+- Which event IDs would your look at to figure out egress?
+- What attributes you can get out of the above events that are not present in 5156 or Sysmon NetworkConnect?
+- What kind of analysis can we do, beyond simplistic "known bad" matching?
+
+## What's Next?
+>Profiling of process-network events.
