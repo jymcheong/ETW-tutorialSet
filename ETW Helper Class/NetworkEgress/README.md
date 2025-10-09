@@ -77,7 +77,7 @@ Id Description
 ```            
 ## What to do further to learn more?
 - Which event IDs would your look at to figure out egress?
-- What attributes you can get out of the above events that are not present in 5156 or Sysmon NetworkConnect?
+- What attributes from the ETW network events that are not present in 5156 or Sysmon NetworkConnect?
 - What kind of analysis can we do, beyond simplistic "known bad" matching?
 
 ## What's Next?
