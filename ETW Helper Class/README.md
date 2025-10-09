@@ -40,7 +40,7 @@ I won't elaborate on how to set up the development environment, use the easiest 
 ### How to figure out which fields from which provider since there are SO MANY!!!?
 >This in my opinion is the most challenging part of ETW development. [Perplexity Pro](https://perplexity.ai/pro?referral_code=P3U9A1TE) is your friend...
 
-This helper class and the examples are organized in an object-oriented format. The comments within the code will explain things further, which I find more effective than writing everything in a single huge README.
+This helper class and the examples are organized in an object-oriented format. The comments within the code will explain further.
 
 ***
 
