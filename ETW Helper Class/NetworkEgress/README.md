@@ -44,7 +44,7 @@ Windows [audit event ID 5156 is your friend](https://www.perplexity.ai/search/ho
 - Custom profiling of process-network events.
 
 ## What does the ETW examples cover?
-The simpler version within this folder shows how tthe ETW helper class receive network events. 
+The simpler version within this folder shows how tthe ETW helper class receive network events. The upcoming example will cover a form of custom profiling of network events.
 
 In case you missed the comments within the example, the following powershell command will be useful for any ETW provider (in this case `Microsoft-Windows-Kernel-Network`):
 ```powershell
