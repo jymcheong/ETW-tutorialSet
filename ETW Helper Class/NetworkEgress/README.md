@@ -48,7 +48,7 @@ The simpler version within this folder introduces how to configure the ETW helpe
 
 In case you missed the comments within the example, the following powershell command will be useful for any ETW provider (in this case `Microsoft-Windows-Kernel-Network`):
 ```powershell
-Get-WinEvent -ListProvider Microsoft-Windows-Kernel-Network).Events | Select Id, Description
+(Get-WinEvent -ListProvider Microsoft-Windows-Kernel-Network).Events | Select Id, Description
 
 Id Description
 -- -----------
