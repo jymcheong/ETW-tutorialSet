@@ -27,7 +27,7 @@ Going through reports from https://thedfirreport.com & the [likes](https://www.p
 - To narrow down any offending process(es) & respond (e.g. kill/block it).
 - Block the bad destinations at the host &/or network level with firewall rules when we can't block at file level.
 - A backdoor process controlled via the Internet may start scanning/accessing Intranet (e.g. org chart webpage),  **accessing both external & internal destinations simultaneously**: 
-  - _how often does that occur in your environment_
+  - _how often does that occur in your environment?_
   - _which programs/processes are involved?_
 
 >You can think of such processes with both Internet & Intranet network activities as **pivot processes**.
