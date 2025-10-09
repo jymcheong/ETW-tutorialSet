@@ -4,7 +4,7 @@ Egress refers to the activities that happen when data leaves our network, whethe
 >Could it be a system update that contacts Microsoft cloud infrastructure, or is it malware downloading more files to stay hidden?
 
 ## What typically happens after Code-Execution?
-W.r.t to Tactics, Techniques & Procedures, the blue arrows below requires some form of network access:
+W.r.t to [Tactics, Techniques & Procedures](https://jym.sg/mental%20models/Tactics%20Techniques%20%26%20Procedures/), the blue arrows below requires some form of network access:
 ![](../img/ttpEgress.png)￼
 
 Initial Code-Execution may:
