@@ -41,7 +41,7 @@ Windows [audit event ID 5156 is your friend](https://www.perplexity.ai/search/ho
 
 ## When will ETW be useful?
 - Automate near-real-time responses that COTS can't do.
-- Want custom profiling of process-network events.
+- Custom profiling of process-network events.
 
 ## What does the ETW examples cover?
 The simpler version within this folder shows how tthe ETW helper class receive network events. 
