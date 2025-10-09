@@ -40,7 +40,6 @@ Windows [audit event ID 5156 is your friend](https://www.perplexity.ai/search/ho
 >The common thing to do with after gathering process destinations, is to compare with a ["bad" list](https://www.perplexity.ai/search/which-is-the-most-active-and-w-9_fxwvxMQKm.KfwqU7HHZA#0).
 
 ## When will ETW be useful?
-- Don't want to solely depend on COTS products because disarming them is becoming a norm.
 - Want some automated response that COTS can't do.
 - Want custom profiling of process-network events.
 
