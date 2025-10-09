@@ -1,5 +1,5 @@
 
->This is a personal project & DOES NOT in any way represent my current & previous employers.
+>This is a personal project (to clock my CISSP CPEs) & DOES NOT in any way represent my current & previous employers.
 
 ## Roadmap
 ![](roadmap.png)
