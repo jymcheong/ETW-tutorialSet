@@ -4,6 +4,9 @@
 ## Roadmap
 ![](roadmap.png)
 ## What is this series about & who is it for?  
+
+Event Tracing for Windows (ETW) is a high-performance, kernel-level logging infrastructure built into Windows that captures detailed system and application events in real time. Introduced in Windows 2000, ETW provides comprehensive telemetry about operating system operations, application behavior, kernel activities, and performance metrics with minimal overhead.
+
 >This is NOT a step-by-step ETW tutorial, it is a sharing of practical experience & notes related to ETW beyond audit log collection.
 
 Target audience:  
