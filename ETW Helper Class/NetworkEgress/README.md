@@ -13,7 +13,7 @@ Initial Code-Execution may:
 
 As part of reconnaisance, attackers may scan the internal network for next or more targets...
 
-Going through the reports @ https://thedfirreport.com & the [likes](https://www.perplexity.ai/search/other-sites-like-https-thedfir-H0hUsCD4SdmEru6yvjomAg#0), you will notice that almost all incidents involving some sort of malware, will almost involve at least one of those boxes above, if not all. 
+Going through reports from https://thedfirreport.com & the [likes](https://www.perplexity.ai/search/other-sites-like-https-thedfir-H0hUsCD4SdmEru6yvjomAg#0), you will notice that almost all incidents that use some sort of malware, will almost involve at least one or more of those boxes above. 
 
 [Mitre](https://attack.mitre.org) has a comprehensive enumeration of techniques per tactic, but this post is not about taxonomy.
 
