@@ -40,11 +40,11 @@ Windows [audit event ID 5156 is your friend](https://www.perplexity.ai/search/ho
 >The common thing to do after gathering process destinations, is to match against ["bad" lists](https://www.perplexity.ai/search/which-is-the-most-active-and-w-9_fxwvxMQKm.KfwqU7HHZA#0).
 
 ## When will ETW be useful?
-- Want some automated response that COTS can't do.
+- Automate near-real-time responses that COTS can't do.
 - Want custom profiling of process-network events.
 
 ## What does the ETW examples cover?
-The simpler version within this folder introduces how to configure the ETW helper class to receive network events. 
+The simpler version within this folder shows how tthe ETW helper class receive network events. 
 
 In case you missed the comments within the example, the following powershell command will be useful for any ETW provider (in this case `Microsoft-Windows-Kernel-Network`):
 ```powershell
