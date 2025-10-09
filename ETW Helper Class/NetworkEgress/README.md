@@ -11,7 +11,7 @@ Initial Code-Execution may:
 1. report to C2 (Command & Control) server so that attackers know they got into target
 2. download more malware or backdoors to install into the system
 
-As part of reconnaisance, attackers may scan internal networks for next or more targets...
+As part of reconnaisance after gaining a foothold, attackers may scan internal networks for next or more targets...
 
 Going through reports from https://thedfirreport.com & the [likes](https://www.perplexity.ai/search/other-sites-like-https-thedfir-H0hUsCD4SdmEru6yvjomAg#0), you will notice that almost all incidents that use some sort of malware, will almost involve at least one or more of those boxes above. 
 
