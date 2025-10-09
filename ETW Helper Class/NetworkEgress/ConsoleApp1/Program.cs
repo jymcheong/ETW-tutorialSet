@@ -65,8 +65,6 @@ void Handler_NetworkEvent(TraceEvent obj)
  */
 string ConvertToIPAddress(TraceEvent obj, int eventId)
 {
-    if (!obj.PayloadNames.Contains("daddr")) return "can't convert";
-    
     object destValue = obj.PayloadByName("daddr");
 
     // Event IDs 10-18 and 42-49 are IPv4
@@ -116,4 +114,5 @@ string ConvertToIPAddress(TraceEvent obj, int eventId)
 
         return "daddr field not found";
     }
+
 }
