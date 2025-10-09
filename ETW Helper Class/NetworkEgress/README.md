@@ -79,6 +79,7 @@ Id Description
 - Which event IDs would your look at to figure out egress?
 - What attributes from the ETW network events that are not present in 5156 or Sysmon NetworkConnect?
 - What kind of analysis can we do, beyond simplistic "known bad" matching?
+- How many processes actually have network activity?
 
 ## What's Next?
 >Cross-process activity tracing...
