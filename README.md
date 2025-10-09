@@ -37,7 +37,7 @@ I will also share how to repurpose certain “fileless” offensive technique to
 ### Near real-time response
 ETW provides the data to decide when to trigger actions on the endpoint instantly, either directly from events or after correlation within endpoint, avoiding the need to send a firehose of data to a backend.
 
-This series will show how to use ETW for near-real-time application and egress control (as shown in the earlier roadmap), using high-level C# code, without kernel-level development.  
+This series will show how to use ETW for near-real-time application control and egress profiling (as shown in the earlier roadmap), using high-level C# code, without kernel-level development.  
 
 ***
 

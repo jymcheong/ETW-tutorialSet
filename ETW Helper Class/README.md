@@ -25,7 +25,7 @@ I won't elaborate on how to set up the development environment, use the easiest 
 - Along with lambda functions, it becomes easier to [write more complex & hard to maintain codes](https://github.com/microsoft/krabsetw/blob/master/examples/ManagedExamples/UserTrace007_StackTrace.cs).
 - **A new project would probably require a total rewrite or removal of most logic that has nothing to do with your new project**
 
->With a helper class, you don't need to copy-&-paste & delete codes that you don't need. You can focus on your core logic instead. Go to the helper class, just configure which ETW provider. More importantly, leverage object oriented approach for more maintainability.
+>This helper class is an example of how codes can be organised in an object-oriented manner that uses event handlers. 
 
 ***
 
