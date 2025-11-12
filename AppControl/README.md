@@ -222,12 +222,30 @@ void Handler_ImageLoad(ImageLoadTraceData obj)
 
 We have to change `Handler_ImageLoad` since `obj.ImageFilename` within `Handler_ProcessStart` does not contain full path. We can then check file ownership with `obj.FileName` (which has full path to file) & take the appropriate response action. To keep this exercise simple, we are only looking at EXE loads, not DLLs. 
 
+```c#
+void Handler_ImageLoad(ImageLoadTraceData obj)
+{
+    if (obj.FileName.ToLower().IndexOf(".dll") > 0) return;
+    // We check file ownership EXE full path, skipping all DLLs for now
+    try
+    {
+        if (IsTrusted(obj.FileName)) return;
+        Console.WriteLine("UNTRUSTED: " + obj.FileName);
+        Process.GetProcessById(obj.ProcessID).Kill();
+    }
+    catch (Exception ex) 
+    {
+        Console.WriteLine(ex.Message);
+    }
+}
+```
+
 This simple agent here will just kill any EXE process if the backing file is not owned by:
 - BUILTIN\Administrators
 - NT SERVICE\TrustedInstaller
 - NT AUTHORITY\SYSTEM
 
-Another approach is to supply events to zoom quickly into files with weak ownership (aka `Untrusted`) that are egressing. Most EDR that writes to a central backend can at best let analysts query or filter based on paths, privilege level & so on. File-ownership is usually not available for those EDRs. **We will dig deeper during the topic of profiling in the next write-up.**
+The file-ownership check is performed within `IsTrusted` method as shown above.
 
 ## Issues with file ownership approach
 - Administrators with certain UAC settings such that files are immediately owned by `BUILTIN\Administrators`.
