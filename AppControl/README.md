@@ -245,7 +245,7 @@ This simple agent here will just kill any EXE process if the backing file is not
 - NT SERVICE\TrustedInstaller
 - NT AUTHORITY\SYSTEM
 
-The file-ownership check is performed within `IsTrusted` method as shown above.
+The [file-ownership check](https://github.com/jymcheong/ETW-tutorialSet/blob/d1ec9c73c4d80378a5a37ce93e5353a625198d49/AppControl/FileOwner/ConsoleApp1/Program.cs#L28) is performed within `IsTrusted` method as shown above.
 
 ## Issues with file ownership approach
 - Administrators with certain UAC settings such that files are immediately owned by `BUILTIN\Administrators`.
