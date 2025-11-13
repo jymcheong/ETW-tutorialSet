@@ -52,7 +52,7 @@ Examples: Microsoft Software Restriction Policies, AppLocker to Windows Defender
 ## Why App Control or Why NOT?
 >Maintaining a bad-list that is potentially infinite is unsustainable, App Control blocks cheap permutations of written malware PE files.
 
-Sounds good in theory but the challenges in practice:
+Sounds good in theory but there are challenges in practice:
 - Evade by Type 2 & 3 techniques
 - Maintaining bad-lists for customers is a more appealing proposition than for customers to purchase yet another product and still have to maintain good-lists themselves!
 - Native Windows implementations are quite complex & fragmented
