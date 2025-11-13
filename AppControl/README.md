@@ -130,7 +130,7 @@ NTFS refers to the file system of Windows. NTFS allows you to control access to 
 
 >If offensive circles have the notion of Living-Off-the-Land for attacking system, then defenders should also maximise native system capabilities to reduce the chance of being attacked.
 
-Just to recap, a malware process running under user's context (e.g. a docx with malicious macro or LNK pointing to malicious scripting) will write PE (Type 1) owned by that user.  There are numerous techniques like DLL-sideloading using legitimate (but problematic) EXEs to load bad DLLs. _Regardless of the PE files & launch variations, they all conform to this "write-&-run" approach._
+Just to recap, a malware process running under user's context (e.g. a docx with malicious macro or LNK pointing to malicious scripting) will write PE (Type 1) owned by that user.  There are numerous techniques like DLL-sideloading using legitimate EXEs to load bad DLLs. _Regardless of the PE files & launch variations, they all conform to this "write-&-run" approach._
 
 All these typically occur within user-writeable folders. Such techniques can evade App Control, which may not enforce DLL checks due to performance concerns because most EXEs load numerous DLLs during launch. To avoid performance impact, modern driver-based host control products can selectively inspect DLLs, but that also means there's usually some forms of signatures and/or behavior to look out for. Persisting the proverbial "Cat-vs-mouse" game of chasing after "bad" software. 
 
