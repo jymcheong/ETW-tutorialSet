@@ -75,9 +75,9 @@ A driver is simply a special code file that is loaded very early in the boot seq
   - Most host products/controls are driver based.
   - Expensive to develop & maintain from a product development perspective.
   - Very static in nature such that adversaries can buy & reverse engineer to disarm products.
-  - Vendor mistakes like the CrowdStrike incident is not new, just at a smaller scale for smaller.
+  - Vendor mistakes like the CrowdStrike incident are nothing new, just at a smaller scale for smaller.
   players.
-  - From customer perspective, may need to maintain lists of allowed directories, specific file paths & so on.
+  - From a customer perspective, need to configure/maintain lists of allowed directories, specific file paths & so on.
 
 ### Loop-holes & Challenges to Overcome
 The main downsides to improve upon:
