@@ -253,7 +253,7 @@ The [file-ownership check](https://github.com/jymcheong/ETW-tutorialSet/blob/d1e
 - Files blocked by NTFS rules don't emit any events unless we explicitly set audit rules for each file, which needs dynamic monitoring of newly written files to add such rule.
 
 ## Suitable Adoption Scenarios
-- Facing challenges to keep AV signatures updated but still need to block malware.
+- Need to block malware but facing challenges to keep AV signatures updated.
 - Limited resources, budget or expertise to lock down Windows endpoints or setup AppLocker or WDAC.
 - Legacy System Hardening e.g. Win7 & soon 10.
 
