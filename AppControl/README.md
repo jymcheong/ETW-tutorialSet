@@ -18,7 +18,7 @@ Short version (Longer version: https://jym.sg/mental%20models/Code%20Execution/)
 
 | **Types** | **Characteristics** | **Examples** |
 |-------------------------|----------------------------------|----------------------------|
-| Type 1 | Write & run executable files | Portable Executables: EXE, DLL... |
+| Type 1 | Write & run executable files | Portable Executables written to disks: EXE, DLL... |
 | Type 2 | Living off the land | Abusing native programs & services, OS mechanisms... |
 | Type 3 | Exploit-Driven | Causing system error or exceptionhandling to run injected codes... |
 
