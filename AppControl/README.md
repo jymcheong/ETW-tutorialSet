@@ -28,7 +28,7 @@ There are numerous taxonomies (which are also forms of MM) and even attempts to 
 Reductionist approach to group how typical general purpose OSes load & run codes: 
 - It is either in executable code files format or it is not. 
 - Executable code files can be either "native" or newly introduced (i.e. written to disk to run Type 1). 
-- When it is NOT using executable file, then the codes have to come from somewhere & need to be interpreted by something within the target; could be an existing program, service or OS mechanisms (Type 2).
+- When it is NOT using executable file, then the codes have to come from somewhere & need to be interpreted by something within the target; could be an existing program, service or OS mechanisms (Type 2 abuses OS features).
 - Finally, there will be ways to inject code fragments by illegimate means that are not based on features like Type 1 or 2, but based on logic issues aka bugs, Type 3.
 
 >In Windows, this so-called executable code file format is known as Portable Executables or PE. Linux, macOS, and various OSes have their respective equivalents. Different code execution types can be "chained" together, from one form leading to another. This chaining aspect is one of the Achilles Heels of offensive code execution.
