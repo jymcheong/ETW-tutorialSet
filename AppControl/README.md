@@ -31,7 +31,7 @@ Reductionist approach to group how typical general purpose OSes load & run codes
 - When it is NOT using executable file, then the codes have to come from somewhere & need to be interpreted by something within the target; could be an existing program, service or OS mechanisms (Type 2 abuses OS features).
 - Finally, there will be ways to inject code fragments by illegimate means that are not based on features like Type 1 or 2, but based on logic issues aka bugs, Type 3.
 
->In Windows, this so-called executable code file format is known as Portable Executables or PE. Linux, macOS, and various OSes have their respective equivalents. Different code execution types can be "chained" together, from one form leading to another. This chaining aspect is one of the Achilles Heels of offensive code execution.
+>In Windows, this code file format is known as Portable Executables or PE. Linux, macOS, and various OSes have their respective equivalents. Different code execution types can be "chained" together, from one form leading to another. This chaining aspect is one of the Achilles Heels of offensive code execution.
 
 
 ### Why reducing to 3 Code-Execution types matters?
@@ -220,7 +220,7 @@ void Handler_ImageLoad(ImageLoadTraceData obj)
 }
 ```
 
-We have to change `Handler_ImageLoad` since `obj.ImageFilename` within `Handler_ProcessStart` does not contain full path. We can then check file ownership with `obj.FileName` (which has full path to file) & take the appropriate response action. To keep this exercise simple, we are only looking at EXE loads, not DLLs. 
+We have to change `Handler_ImageLoad` since `obj.ImageFilename` within `Handler_ProcessStart` does not contain full path. We can then check file ownership with `obj.FileName` (which is full path to file) & take the appropriate response action. To keep this exercise simple, we are only looking at EXE loads, not DLLs. 
 
 ```c#
 void Handler_ImageLoad(ImageLoadTraceData obj)
