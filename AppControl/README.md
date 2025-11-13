@@ -25,11 +25,11 @@ Short version (Longer version: https://jym.sg/mental%20models/Code%20Execution/)
 ### Why 3, not 4 or more?
 There are numerous taxonomies (which are also forms of MM) and even attempts to enumerate & categorize different attack techniques into frameworks like MITRE ATT&CK. However, such taxonomies are taxing to most brains & a challenge to remember for most mortals. As such, we (my former Test-&-Evaluation group) developed a mental model that is practical and useful in a working environment.
 
-Reductionist approach to group how typical general purpose OSes load & run codes: 
+Reductionist approach to generalize Code-Execution approaches: 
 - It is either in executable code files format or it is not. 
 - Executable code files can be either "native" or newly introduced (i.e. written to disk to run Type 1). 
-- When it is NOT using executable file, then the codes have to come from somewhere & need to be interpreted by something within the target; could be an existing program, service or OS mechanisms (Type 2 abuses OS features).
-- Finally, there will be ways to inject code fragments by illegimate means that are not based on features like Type 1 or 2, but based on logic issues aka bugs, Type 3.
+- When the attack is NOT using executable file, then malicious codes have to come from somewhere & need to be interpreted by something within the target; could be an existing program, service or OS mechanisms (Type 2 abuses OS native features).
+- Finally, there will be ways to inject code fragments by illegimate means that are not based on features like Type 1 or 2, but based on logic issues aka bugs, Type 3 (e.g. shellcode injection).
 
 >In Windows, this code file format is known as Portable Executables or PE. Linux, macOS, and various OSes have their respective equivalents. Different code execution types can be "chained" together, from one form leading to another. This chaining aspect is one of the Achilles Heels of offensive code execution.
 
