@@ -53,8 +53,8 @@ Examples: Microsoft Software Restriction Policies, AppLocker to Windows Defender
 >Maintaining a bad-list that is potentially infinite is unsustainable, App Control blocks cheap permutations of written malware PE files.
 
 Sounds good in theory but there are challenges in practice:
-- Evade by Type 2 & 3 techniques
-- Maintaining bad-lists for customers is a more appealing proposition than for customers to purchase yet another product and still have to maintain good-lists themselves!
+- Evasion with Type 2 & 3 techniques
+- Maintaining bad-lists for customers is a more appealing proposition than for customers to purchase yet another product to add more work to maintain good-lists!
 - Native Windows implementations are quite complex & fragmented
 
 The following table provides a perspective on controls in relation to three types of code execution:
