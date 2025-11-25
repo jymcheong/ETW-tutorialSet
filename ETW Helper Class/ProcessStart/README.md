@@ -1,5 +1,5 @@
 ## What is it doing?
-- Process start by default are NOT shown in Windows Event Viewer.
+- Process start events NOT shown in Windows Event Viewer.
 - This simple example shows PID (Process Identifier), file name (no path), and command line arguments & finally full path within ImageLoad event handler.
 - If you remove the if line that filters out DLL paths, you will see the amount of DLLs that are loaded per process.
 
